@@ -18,12 +18,13 @@ import { ToastContainer } from 'react-toastify';
 import Login from './Login';
 import Accounts from './Accounts';
 import MyCrud from './MyCrud';
-
+import BasicForm from './BasicForm';
+import DynamicForm from './DynamicForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <MyCrud/>
+    <DynamicForm/>
   
   </React.StrictMode>
 );

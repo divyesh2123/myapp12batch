@@ -10,7 +10,7 @@ export default function Accounts() {
     let myToken = JSON.parse(localStorage.getItem("user"));
 
 
-    authFetch.delete(
+    authFetch.p(
     "/accounts")
     .then(y=> {
 
