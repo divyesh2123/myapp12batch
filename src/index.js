@@ -19,12 +19,12 @@ import Login from './Login';
 import Accounts from './Accounts';
 import MyCrud from './MyCrud';
 import BasicForm from './BasicForm';
-import DynamicForm from './DynamicForm';
+import DynamicNoramal from './DynamicNoramal';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <DynamicForm/>
+    <DynamicNoramal/>
   
   </React.StrictMode>
 );
