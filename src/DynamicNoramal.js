@@ -57,9 +57,12 @@ export default function DynamicNoramal() {
      }
      else
      {
-        let index = d[1];
-        mydata[d[0]]
-
+        let index1 = d[1];
+      
+       let index= index1.substr(index1.indexOf('[')+1,1);
+       let field = index1.substring(0,index1.indexOf('['));
+      mydata[d[0]][index][field] =value;
+      
      }
 
 

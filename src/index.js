@@ -19,13 +19,16 @@ import Login from './Login';
 import Accounts from './Accounts';
 import MyCrud from './MyCrud';
 import BasicForm from './BasicForm';
+
+import Appointment from './Appointment';
+import Header from './Header';
 import DynamicNoramal from './DynamicNoramal';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
+   
     <DynamicNoramal/>
-  
+ 
   </React.StrictMode>
 );
 
