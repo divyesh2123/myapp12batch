@@ -37,13 +37,19 @@ const mySave = (e)=> {
     setData({type:"ADD",payload : myinput})
 }
 
-const myDelete = (index)=> {
 
-}
+
+
 
 
 const [myinput,setInput] = useState('');
  const [data,setData] =  useReducer(myReducer,[]);
+
+ const myDelete = React.useCallback((index)=> {
+
+    console.log(index);
+
+},[data])
  
  console.log(data);
  return (

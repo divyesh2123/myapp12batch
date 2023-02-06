@@ -73,7 +73,7 @@ export default function StudentInfo() {
                 <div>
         <input type="text" {...formik.getFieldProps('emailId')} />
                   {renderErrorMessage('emailId')}
-                </div>
+                </div>R
               </div>
               <div class="form-group">
                 <label> Mobile Number </label>

@@ -10,12 +10,4 @@ import React, { useEffect } from 'react'
   )
 }
 
-export default React.memo(MyItemMemo, (pre,nexr)=> {
-    if(pre.items.length == nexr.items.length)
-    {
-        return true;
-    }
-
-    return false;
-
-});
+export default React.memo(MyItemMemo);
