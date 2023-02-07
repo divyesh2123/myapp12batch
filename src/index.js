@@ -24,13 +24,14 @@ import Appointment from './Appointment';
 import Header from './Header';
 import DynamicNoramal from './DynamicNoramal';
 import ShowMoreInfo from './ShowMoreInfo';
+import MYFormCD from './MYFormCD';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    
     {/* <DynamicNoramal/> */}
 
-    <MyCrud/>
+    <MYFormCD/>
 
     {/* <ShowMoreInfo helpText="This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec"/>
     <ShowMoreInfo helpText="This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec"/>
