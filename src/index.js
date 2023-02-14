@@ -24,15 +24,27 @@ import Appointment from './Appointment';
 import DynamicNoramal from './DynamicNoramal';
 import ShowMoreInfo from './ShowMoreInfo';
 import MYFormCD from './MYFormCD';
+import UserData from './UserData';
 import Header  from './components/Header';
+import {Provider}  from 'react-redux'
+import store from './store/store'
+import CounterNew from './CounterNew';
+import UserAPI from './UserAPI';
+import ProductInfo from './ProductInfo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    
-   
+   <Provider store={store}>
+
+   <UserData/>
+   <CounterNew/>
+  
+   <ProductInfo/>
+   </Provider>
     {/* <DynamicNoramal/> */}
 
-    <Header/>
+    
 
     {/* <ShowMoreInfo helpText="This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec"/>
     <ShowMoreInfo helpText="This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec"/>
