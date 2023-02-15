@@ -14,7 +14,7 @@ export default function ProductInfo() {
 
     useEffect(()=> {
 
-        mydis(ProducAction())
+        mydis({type:'REQUESTSTART'})
 
     },[])
 

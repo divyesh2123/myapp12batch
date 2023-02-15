@@ -31,16 +31,16 @@ import store from './store/store'
 import CounterNew from './CounterNew';
 import UserAPI from './UserAPI';
 import ProductInfo from './ProductInfo';
+import CounterSaga from './CounterSaga';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    
    <Provider store={store}>
 
-   <UserData/>
-   <CounterNew/>
-  
+   <CounterSaga/>
    <ProductInfo/>
+   
    </Provider>
     {/* <DynamicNoramal/> */}
 
