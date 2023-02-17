@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import {Increment,Decrement} from './action/counteraction'
+import { decrement, increment } from './slices/counterslice';
+
 
 export default function CounterNew() {
 
@@ -10,17 +11,17 @@ export default function CounterNew() {
 
    const incre = ()=> {
 
-    disData(Increment())
+    disData(increment())
    }
 
    const decre = ()=> {
 
-    disData(Decrement())
+    disData(decrement())
    }
 
   return (
     <div>
-        {counter}
+        {counter.count}
         <button onClick={incre}> +</button>
         <button onClick={decre}>-</button>
     </div>

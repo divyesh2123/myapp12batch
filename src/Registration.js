@@ -3,7 +3,11 @@ import axios from 'axios'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import TextField from '@mui/material/TextField';
+import { useDispatch, useSelector } from 'react-redux';
 export default function Registration() {
+
+  const mysele = useSelector(y=>y.regi)
+ const mydis =  useDispatch()
 const [data,setData] =  useState({
   title : "",
   firstName : "",
@@ -19,17 +23,19 @@ const mySubmit =(e)=> {
 
   e.preventDefault();
 
-  axios.post("https://real-pear-fly-kilt.cyclic.app/accounts/register",
-  data)
-  .then(y=> {
-    if(y.status == 200 || y.status == 201)
-    {
-    toast("Registration!")
-    }
-    console.log(y);
-  }).catch(y=> {
-    toast.error("Error")
-  })
+  mydis({type:'START', payload: data})
+
+  // axios.post("https://real-pear-fly-kilt.cyclic.app/accounts/register",
+  // data)
+  // .then(y=> {
+  //   if(y.status == 200 || y.status == 201)
+  //   {
+  //   toast("Registration!")
+  //   }
+  //   console.log(y);
+  // }).catch(y=> {
+  //   toast.error("Error")
+  // })
   
 }
 

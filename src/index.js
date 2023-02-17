@@ -32,16 +32,20 @@ import CounterNew from './CounterNew';
 import UserAPI from './UserAPI';
 import ProductInfo from './ProductInfo';
 import CounterSaga from './CounterSaga';
+import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   
+     <BrowserRouter>
    <Provider store={store}>
 
-   <CounterSaga/>
-   <ProductInfo/>
+
+   <App/>
+  
    
    </Provider>
+
+   </BrowserRouter>
     {/* <DynamicNoramal/> */}
 
     

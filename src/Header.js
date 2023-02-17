@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
 import LanguageContext from './UserContext/LanguageContext'
 
 export default function Header() {
@@ -14,6 +15,20 @@ export default function Header() {
             <option value="hi">Hindi</option>
 
             </select>
+
+            <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <a href ="/regi">Registration</a>
+          </li>
+          <li>
+            <Link to="/logi">Login</Link>
+          </li>
+        </ul>
+      </nav>
 
     </div>
   )
