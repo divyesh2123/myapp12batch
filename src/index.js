@@ -33,6 +33,12 @@ import UserAPI from './UserAPI';
 import ProductInfo from './ProductInfo';
 import CounterSaga from './CounterSaga';
 import { BrowserRouter } from "react-router-dom";
+import FileData from './FileData';
+import FullFormFunction from './FullFormFunction';
+
+import VideoPlayer from './VideoPlayer';
+import GridExample from './GridExample';
+import CustomHook from './customhook/CustomHook';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -46,13 +52,7 @@ root.render(
    </Provider>
 
    </BrowserRouter>
-    {/* <DynamicNoramal/> */}
-
-    
-
-    {/* <ShowMoreInfo helpText="This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec"/>
-    <ShowMoreInfo helpText="This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec"/>
-    <ShowMoreInfo helpText="This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec This is the javascript from the weltec"/> */}
+   
   </React.StrictMode>
 );
 
